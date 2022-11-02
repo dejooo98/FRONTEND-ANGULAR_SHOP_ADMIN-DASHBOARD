@@ -1,0 +1,137 @@
+// Base Config
+@import '~normalize.css/normalize.css';
+@import './base/colors.scss';
+@import './base/fonts.scss';
+@import './base/mixins.scss';
+
+//Libraries
+@import '~primeicons/primeicons.css';
+@import '~primeng/resources/themes/saga-blue/theme.css';
+@import '~primeng/resources/primeng.min.css';
+@import '~primeflex/primeflex.scss';
+@import '~animate.css/animate.css';
+
+@import './base/configuration.scss';
+
+//Shared
+@import './apps/shop/shared/header.scss';
+@import './apps/shop/shared/footer.scss';
+@import './apps/shop/shared/nav.scss';
+
+//Pages
+@import './apps/shop/pages/home-page.scss';
+@import './apps/shop/pages/products-list-page.scss';
+
+//Libs
+@import './libs/products/products.scss';
+@import './libs/orders/orders.scss';
+@import './libs/users/users.scss';
+@import './libs/ui/ui.scss';
+
+.container {
+  width: 1200px;
+  padding: 15px;
+  margin: 0 auto;
+  background-color: var(--surface-100);
+}
+a {
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+
+//MEDIA QUERIES
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .p-grid {
+    display: grid;
+    align-items: center;
+  }
+  .p-col-2 {
+    width: 100%;
+  }
+  .p-col-3 {
+    width: 100%;
+  }
+  .p-col-5 {
+    width: 90%;
+  }
+  .banner {
+    height: 550px;
+
+    &-button {
+      width: 100%;
+    }
+    &-text {
+      h1 {
+        font-size: 2.3rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .banner-image {
+    margin-top: 3rem;
+
+    img {
+      width: 200px;
+    }
+  }
+  h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  footer .footer-wrapper {
+    display: flex;
+  }
+  .products-search {
+    width: 350px;
+  }
+  header .tools {
+    width: 100%;
+    text-align: center;
+  }
+  .p-offset-1 {
+    margin-left: 5.333333%;
+  }
+  .navigation {
+    width: 90%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .logo {
+    text-align: center;
+  }
+  .product-item-wrapper {
+    min-width: 360px;
+    margin: 3rem auto;
+  }
+  .gallery .main-image {
+    height: 300px;
+  }
+  .gallery .images ul li {
+    width: 100%;
+  }
+  .p-col-8 {
+    width: 100%;
+  }
+  .p-col-4 {
+    width: 100%;
+  }
+  .cart-page button {
+    width: 100%;
+  }
+  .checkout-page button {
+    width: 100%;
+  }
+
+  .login-register {
+    height: 55vh;
+
+    &-panel {
+      top: 17rem;
+    }
+  }
+}
