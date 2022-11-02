@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   // apiUrl: 'http://localhost:3000/api/v1/' //-- LOCALHOST
-  apiUrl: 'https://angular-ecommerce-backend.herokuapp.com/api/v1' //-- HOSTED BACKEND
+  apiUrl: 'https://angular-ecommerce-backend.herokuapp.com/api/v1/' //-- HOSTED BACKEND
 };
 
 /*
